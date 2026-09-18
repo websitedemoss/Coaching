@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * Central site configuration
+ * Central site configuration for quick agency re-branding & customization
  */
 const siteConfig = {
   brand: 'Nexora Academy',
@@ -9,7 +9,18 @@ const siteConfig = {
   location: 'Ahmedabad, Gujarat',
   phone: '+91 00000 00000',
   whatsapp: '910000000000',
-  email: 'hello@nexora-demo.com'
+  email: 'hello@nexora-demo.com',
+  primaryCTA: 'Book Free Counselling',
+  programs: [
+    { name: 'JEE Excellence', category: 'Engineering', cta: 'Explore Program' },
+    { name: 'NEET Pro', category: 'Medical', cta: 'Explore Program' },
+    { name: 'Foundation', category: 'Classes 8–10', cta: 'Explore Program' }
+  ],
+  faculty: [
+    { name: 'Dr. Arjun Mehta', subject: 'Physics', exp: '12+ years', focus: 'JEE Advanced • Mechanics • Electrodynamics' },
+    { name: 'Dr. Riya Shah', subject: 'Chemistry', exp: '10+ years', focus: 'NEET Chemistry • Organic • Reaction Mechanisms' },
+    { name: 'Prof. Kunal Patel', subject: 'Mathematics', exp: '14+ years', focus: 'JEE Main & Adv • Calculus • Coordinate Geometry' }
+  ]
 };
 
 document.addEventListener('DOMContentLoaded', () => {

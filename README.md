@@ -56,14 +56,36 @@ const siteConfig = {
   tagline: 'Their Tagline Here',
   location: 'City, State',
   phone: '+91 99999 99999',
-  whatsapp: '919999999999',
-  email: 'info@client.com'
+  email: 'hello@nexora-demo.com',
+  primaryCTA: 'Book Free Counselling',
+  programs: [ ... ],
+  faculty: [ ... ]
 };
 ```
 
 Then update the text content in `index.html` (headings, descriptions, programs, faculty, etc.).
 
-### 2. Colors
+### 2. Website Sections Overview
+
+1. **Navbar** — Sticky, backdrop blur, dark/light theme switch, mobile drawer
+2. **Hero** — Conversion-focused headline, primary & secondary CTAs, trust stats, 3 floating performance demo cards with micro-motion
+3. **Trust Strip** — Partner & educational marks
+4. **Problem → Solution** — 3-step transformation cards (`Problem` → `Nexora Approach` → `Student Outcome`)
+5. **Why Nexora?** — 3 core pillars: Expert Faculty, Personal Guidance, Continuous Assessment
+6. **Programs** — JEE Excellence, NEET Pro, and Foundation with curriculum highlights and direct CTAs
+7. **Results Showcase** — Transparent metric counters with explicit sample demonstration disclaimer
+8. **Student Performance Dashboard** — Detailed Aarav Shah mockup featuring subject breakdowns and weekly test score progression bars
+9. **Faculty** — Academic credentials, subject specializations, and teaching focus tags
+10. **Testimonials** — Authentic student feedback quotes without exaggerated claims
+11. **Step-by-Step Process** — 4 connected milestones from counselling to progress tracking
+12. **Institute Solutions (Agency Showcase)** — 8 key digital capabilities we build for coaching clients
+13. **Conversion Banner** — High-contrast CTA block with WhatsApp chat trigger
+14. **Enquiry Form** — Accessible inputs, native select styling, client-side validation, and polite success state
+15. **FAQ** — Accessible accordion with single-open focus
+16. **Footer** — Brand details, quick anchors, and clear demo notices
+17. **Floating Controls** — One-tap WhatsApp button with desktop tooltip & mobile-only sticky CTA bar
+
+### 3. Colors
 
 Edit `css/tokens.css` to change the accent color, backgrounds, etc.:
 
@@ -76,7 +98,7 @@ Edit `css/tokens.css` to change the accent color, backgrounds, etc.:
 
 The light theme overrides are in `[data-theme="light"]` in the same file.
 
-### 3. Images
+### 4. Images
 
 Place optimized images in `assets/images/`. The SafeImage system ensures:
 - A **loading skeleton** shows while images load
@@ -85,11 +107,11 @@ Place optimized images in `assets/images/`. The SafeImage system ensures:
 
 Recommended formats: WebP, AVIF, or optimized JPG/PNG.
 
-### 4. WhatsApp Number
+### 5. WhatsApp Number
 
 The WhatsApp number is set in `siteConfig.whatsapp` in `main.js`. It is applied automatically to all WhatsApp buttons/links on page load.
 
-### 5. Connect the Form
+### 6. Connect the Form
 
 The enquiry form currently shows a success message without sending data. To connect it:
 - **WhatsApp API:** Format the form data as a message and redirect to `https://wa.me/YOURNUMBER?text=...`
