@@ -1,0 +1,134 @@
+/* ============================================================
+   DESIGN TOKENS — Nexora Academy
+   Central design-token system for colors, spacing, radius,
+   typography, shadows, and transitions.
+   ============================================================ */
+
+:root {
+  /* ── Color Palette (Dark — Default) ─────────────────────── */
+  --color-bg:             #0B0D10;
+  --color-bg-secondary:   #11151A;
+  --color-card:           #151A20;
+  --color-text:           #F5F7FA;
+  --color-text-secondary: #A8B0BA;
+  --color-border:         #252B33;
+  --color-accent:         #7C5CFF;
+  --color-accent-hover:   #9278FF;
+  --color-accent-subtle:  rgba(124, 92, 255, 0.10);
+  --color-success:        #35C48A;
+  --color-success-subtle: rgba(53, 196, 138, 0.10);
+  --color-error:          #F04438;
+  --color-error-subtle:   rgba(240, 68, 56, 0.10);
+  --color-overlay:        rgba(0, 0, 0, 0.60);
+
+  /* ── Typography ─────────────────────────────────────────── */
+  --font-family:    'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-weight-regular:  400;
+  --font-weight-medium:   500;
+  --font-weight-semibold: 600;
+  --font-weight-bold:     700;
+
+  /* Sizes */
+  --text-xs:   0.8125rem;   /* 13px */
+  --text-sm:   0.875rem;    /* 14px */
+  --text-base: 1rem;        /* 16px */
+  --text-md:   1.125rem;    /* 18px */
+  --text-lg:   1.25rem;     /* 20px */
+  --text-xl:   1.5rem;      /* 24px */
+  --text-2xl:  1.75rem;     /* 28px */
+  --text-3xl:  2rem;        /* 32px */
+  --text-4xl:  2.5rem;      /* 40px */
+  --text-5xl:  3rem;        /* 48px */
+  --text-6xl:  3.5rem;      /* 56px */
+  --text-7xl:  4.5rem;      /* 72px */
+
+  /* Line Heights */
+  --leading-tight:  1.15;
+  --leading-snug:   1.3;
+  --leading-normal: 1.6;
+  --leading-relaxed: 1.75;
+
+  /* Letter Spacing */
+  --tracking-tight:  -0.02em;
+  --tracking-normal:  0;
+  --tracking-wide:    0.02em;
+  --tracking-wider:   0.06em;
+
+  /* ── Spacing Scale ──────────────────────────────────────── */
+  --space-1:   0.25rem;   /* 4px  */
+  --space-2:   0.5rem;    /* 8px  */
+  --space-3:   0.75rem;   /* 12px */
+  --space-4:   1rem;      /* 16px */
+  --space-5:   1.25rem;   /* 20px */
+  --space-6:   1.5rem;    /* 24px */
+  --space-8:   2rem;      /* 32px */
+  --space-10:  2.5rem;    /* 40px */
+  --space-12:  3rem;      /* 48px */
+  --space-16:  4rem;      /* 64px */
+  --space-20:  5rem;      /* 80px */
+  --space-24:  6rem;      /* 96px */
+  --space-32:  8rem;      /* 128px */
+
+  /* ── Section Spacing ────────────────────────────────────── */
+  --section-padding-y:     var(--space-20);
+  --section-padding-y-lg:  var(--space-24);
+
+  /* ── Border Radius ──────────────────────────────────────── */
+  --radius-sm:   0.375rem;  /* 6px  */
+  --radius-md:   0.5rem;    /* 8px  */
+  --radius-lg:   0.75rem;   /* 12px */
+  --radius-xl:   1rem;      /* 16px */
+  --radius-2xl:  1.5rem;    /* 24px */
+  --radius-full: 9999px;
+
+  /* ── Shadows ────────────────────────────────────────────── */
+  --shadow-sm:   0 1px 2px rgba(0, 0, 0, 0.15);
+  --shadow-md:   0 4px 12px rgba(0, 0, 0, 0.15);
+  --shadow-lg:   0 8px 24px rgba(0, 0, 0, 0.20);
+  --shadow-xl:   0 16px 48px rgba(0, 0, 0, 0.25);
+  --shadow-glow: 0 0 20px rgba(124, 92, 255, 0.15);
+
+  /* ── Transitions ────────────────────────────────────────── */
+  --transition-fast:    150ms ease;
+  --transition-base:    250ms ease;
+  --transition-slow:    400ms ease;
+  --transition-spring:  350ms cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* ── Layout ─────────────────────────────────────────────── */
+  --container-max:    1200px;
+  --container-wide:   1400px;
+  --container-narrow: 720px;
+  --nav-height:       72px;
+
+  /* ── Z-index Scale ──────────────────────────────────────── */
+  --z-base:     1;
+  --z-dropdown: 10;
+  --z-sticky:   100;
+  --z-overlay:  500;
+  --z-modal:    1000;
+  --z-fab:      900;
+}
+
+/* ── Light Theme Overrides ──────────────────────────────────── */
+[data-theme="light"] {
+  --color-bg:             #FAFAF8;
+  --color-bg-secondary:   #F2F3F5;
+  --color-card:           #FFFFFF;
+  --color-text:           #111318;
+  --color-text-secondary: #626A75;
+  --color-border:         #E3E6EA;
+  --color-accent:         #6246EA;
+  --color-accent-hover:   #5035D0;
+  --color-accent-subtle:  rgba(98, 70, 234, 0.08);
+  --color-success:        #168A5A;
+  --color-success-subtle: rgba(22, 138, 90, 0.08);
+  --color-error:          #D92D20;
+  --color-error-subtle:   rgba(217, 45, 32, 0.08);
+  --color-overlay:        rgba(0, 0, 0, 0.40);
+
+  --shadow-sm:   0 1px 3px rgba(0, 0, 0, 0.06);
+  --shadow-md:   0 4px 12px rgba(0, 0, 0, 0.06);
+  --shadow-lg:   0 8px 24px rgba(0, 0, 0, 0.08);
+  --shadow-xl:   0 16px 48px rgba(0, 0, 0, 0.10);
+  --shadow-glow: 0 0 20px rgba(98, 70, 234, 0.10);
+}
